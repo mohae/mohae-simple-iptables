@@ -7,4 +7,6 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe "cookbook-simple-iptables"
+include_recipe "simple-iptables"
+include_recipe "drop_all"
+include_recipe "ssh"
