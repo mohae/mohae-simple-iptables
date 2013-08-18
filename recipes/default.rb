@@ -8,5 +8,5 @@
 #
 
 include_recipe "simple-iptables"
-include_recipe "drop_all"
-include_recipe "ssh"
+include_recipe "mohae-simple-iptables::drop_all"
+include_recipe "mohae-simple-iptables::ssh"
