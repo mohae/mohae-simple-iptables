@@ -1,4 +1,4 @@
 site :opscode
 
 metadata
-cookbook 'simple-iptables'       , github: 'mohae/simple-iptables'
+cookbook 'simple_iptables'    , github: 'mohae/cookbook-simple-iptables'

@@ -6,4 +6,4 @@ description      'Installs/Configures mohae-simple-iptables'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.1'
 
-depends 'simple-iptables'
+depends 'simple_iptables'
