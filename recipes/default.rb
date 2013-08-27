@@ -19,4 +19,3 @@ include_recipe "mohae-simple-iptables::loopback"
 include_recipe "mohae-simple-iptables::allow_established"
 include_recipe "mohae-simple-iptables::ssh"
 include_recipe "mohae-simple-iptables::log_denies"
-
