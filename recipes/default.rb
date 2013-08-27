@@ -8,6 +8,15 @@
 #
 
 include_recipe "simple_iptables"
-include_recipe "mohae-simple-iptables::drop_all"
-#include_recipe "mohae-simple-iptables::default_accept"
-#include_recipe "mohae-simple-iptables::ssh"
+
+#reject packets unless explicitly allowed
+simple_iptables_policy "INPUT" do
+  policy "DROP"
+end
+
+#set the rules
+include_recipe "mohae-simple-iptables::loopback"
+include_recipe "mohae-simple-iptables::allow_established"
+include_recipe "mohae-simple-iptables::ssh"
+include_recipe "mohae-simple-iptables::log_denies"
+
